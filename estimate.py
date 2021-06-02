@@ -17,11 +17,12 @@ def monte_carlo(n):
     while i<=n:
         x=random.random()
         y=random.random()
-        d=sqrt((0.5-x)**2+(0.5-y)**2)
+        d=math.sqrt((0.5-x)**2+(0.5-y)**2)
         if d<=0.5:
             c=+1
         else:
             s+=1
+        i+=1
     return c/s*4
 
 class TestWallis(unittest.TestCase):
