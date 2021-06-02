@@ -19,7 +19,7 @@ def monte_carlo(n):
         y=random.random()
         d=math.sqrt((0.5-x)**2+(0.5-y)**2)
         if d<=0.5:
-            c=+1
+            c+=1
         else:
             s+=1
         i+=1
